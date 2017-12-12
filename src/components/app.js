@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/app.css';
+import Header from './header';
+import Stats from './stats'
+import Game from './game';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
-}
+
+
+const App = () => (
+    <div className="container">
+        <Header />
+        <Stats />
+        <Game />
+
+    </div>
+);
+
+export default App;

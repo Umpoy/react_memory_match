@@ -1,25 +1,23 @@
-# ReduxSimpleStarter
+# React Starter
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+> This repo contains boilerplate code to aid in the creation of a new React app with Redux. Follow the below setup instructions to get started.
 
-### Getting Started
+### Setup Instructions
 
-There are two methods for getting started with this repo.
+> 1. Fork this repo
+> 1. Clone your forked copy of this repo
+>    - `git clone https://github.com/[Your Username]/react_starter.git`
+> 1. Change directory into the newly cloned repo
+>    - `cd react_starter`
+> 1. Install dependencies 
+>    - `npm install`
+> 1. Start dev server
+>    - `npm start`
+> 1. Open a browser and navigate to `localhost:3000` You should see a page that displays "Welcome to React!"
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+### Bundle For Deployment
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
+> 1. Run webpack to bundle files
+>    - `npm run bundle`
+> 
+> **NOTE:** *After bundling you can not directly run your app locally. You must run your app from the root directory of a server.*
