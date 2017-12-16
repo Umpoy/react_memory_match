@@ -4,11 +4,14 @@
     min-width: 80vw;
     grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
 	grid-template-rows: 33.3% 33.3% 33.3%;
+	grid-template-areas:
+		"y y y y y y"
+		"y y y y y y"
+		"y y y y y y";
 }
 
 .back{
     position: absolute;
-    background-image: url(../images/card-back.jpg);
 }
 
 .front{
@@ -16,5 +19,6 @@
 }
 
 .card{
+    grid-area: y;
     position: relative;
 }

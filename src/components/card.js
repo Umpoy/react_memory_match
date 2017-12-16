@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import cardBack from '../assets/images/card-back.jpg'
+import cardBack from '../assets/images/card-back.jpg';
 
 class Card extends Component {
 
     constructor(props) {
         super(props)
         this.state = {}
-
 
         this.clicked = this.clicked.bind(this);
         // console.log(this.props.details.card)
@@ -23,12 +22,12 @@ class Card extends Component {
     render() {
 
         return (
-            <div className="Card" onClick={this.clicked}>
+            <div className="card" onClick={this.clicked}>
                 <div className="front">
                     <img src={this.props.details.card} />
                 </div>
                 <div className="back">
-                    {/* <img src={cardBack} /> */}
+                    <img src={cardBack} />
                 </div>
             </div>
         )
