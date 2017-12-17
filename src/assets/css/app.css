@@ -1,8 +1,9 @@
 .gameBoard {
     border: 1px solid black;
-    min-height: 60vh;
+    min-height: 80vh;
     min-width: 80vw;
-    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+	display: grid;
+	grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
 	grid-template-rows: 33.3% 33.3% 33.3%;
 	grid-template-areas:
 		"y y y y y y"
@@ -21,4 +22,8 @@
 .card{
     grid-area: y;
     position: relative;
+}
+
+.revealed{
+    display: none;
 }
