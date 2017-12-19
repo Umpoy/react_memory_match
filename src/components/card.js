@@ -23,17 +23,18 @@ class Card extends Component {
             clicked: true
         })
         this.props.checkCard(this.props.cardIndex);
-
-
     }
 
     render() {
         const revealed = {
             display: 'none'
         }
-        const set_card_clicked = this.state.clicked ? revealed : console.log('card isnt clicked');
+        const flipped = {
+            transform: 'rotateY(360deg)'
+        }
+        const set_card_clicked = this.state.clicked ? revealed : console.log('');
         return (
-            <div className="card" onClick={this.clicked}>
+            <div className="card" onClick={this.clicked} style={this.state.clicked ? flipped : console.log('')}>
                 <div className="front">
                     <img src={this.props.details.card} />
                 </div>

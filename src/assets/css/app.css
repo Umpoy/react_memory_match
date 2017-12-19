@@ -22,8 +22,14 @@
 .card{
     grid-area: y;
     position: relative;
+	transition: 1s; /* test */
+	transform-style: preserve-3d;
 }
 
 .revealed{
-    display: none;
+    display: none;   
 }
+
+/* .flip{
+    transform: rotateY(360deg);
+} */
