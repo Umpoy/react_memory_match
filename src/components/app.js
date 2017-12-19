@@ -4,6 +4,7 @@ import '../assets/css/app.css';
 import Header from './header';
 import Stats from './stats'
 import Game from './game';
+import Footer from './footer'
 
 
 
@@ -12,6 +13,7 @@ const App = () => (
         <Header />
         <Stats />
         <Game />
+        <Footer />
 
     </div>
 );
